@@ -1,0 +1,26 @@
+header{
+    position:fixed;
+    top:0;
+    width:100vw;
+    background-color: #1565c0;
+    height:5rem;
+  
+}
+
+.signin_btn{
+ border:none;
+ outline:none;
+ background-color:#1565c0;
+ color:#ffffff;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+i{
+    padding:0.5rem;
+}

@@ -1,13 +1,115 @@
+html {
+ font-size: 62.5%;
+ box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+ 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root{
+    height: 100%;
 }
+
+ /* Layout */
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 7rem;
+  height: 100%;
+}
+header {
+  grid-area: header;
+  background-color: #1565c0;
+}
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+footer {
+  grid-area: footer;
+  background-color: #000000;
+}
+
+/* common */
+
+.link{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  background-color: none;
+}
+
+.link:hover{
+   text-decoration: none;
+   color:#ffffff
+}
+
+
+.row_align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+/* Header */
+.brand {
+  font-weight: bold;
+}
+.sign_in_btn{
+  color:#ffffff;
+  border:none;
+  outline:none;
+  font-size:1.6rem;
+  background-color:#1565c0;
+}
+.brand_logo{
+  padding:0.5rem;
+}
+
+/* main */
+.row_align.main{
+  justify-content: center;
+}
+.book_btn{
+    background-color:#008000;
+    width:100%;
+    height:5rem;
+    border-radius:0.5rem;
+    border:none;
+    outline:none;
+    color:#ffffff;
+    font-size:x-large;
+    cursor:pointer;
+}
+.book-btn i{
+    font-size:larger;
+}
+
+/* footer */
+.media a{
+  padding: 1rem;
+}
+.copyright {
+  opacity: 0.5;
+}
+
+.modal_close_btn{
+  background-color:#ffffff;
+  border: none;
+  outline:none;
+  float:right;
+  font-size:x-large
+}
+
+
