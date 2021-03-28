@@ -4,8 +4,10 @@ html {
 }
 body {
   margin: 0;
+
   height: 100vh;
   font-size: 1.6rem;
+  z-index:-2;
   font-family: Helvetica, Arial, sans-serif;
  
   -webkit-font-smoothing: antialiased;
@@ -27,14 +29,22 @@ body {
 header {
   grid-area: header;
   background-color: #1565c0;
+  position:sticky;
+  z-index: 1;
+  top:0;
 }
 main {
   grid-area: main;
   padding: 1rem;
+
 }
 footer {
   grid-area: footer;
   background-color: #000000;
+  position:sticky;
+    z-index: 1;
+  
+  bottom:0
 }
 
 /* common */
@@ -112,4 +122,13 @@ footer {
   font-size:x-large
 }
 
+.modalToggle{
+ margin-left:40% ;
+ margin-top:15%
+}
 
+.vehicleDetails{
+  margin-top: 60px;
+  width:100%
+
+}

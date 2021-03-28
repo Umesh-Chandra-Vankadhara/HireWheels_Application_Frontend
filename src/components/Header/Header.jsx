@@ -1,7 +1,7 @@
 import React from "react";
 // import "./Header.css";
 import { Link } from "react-router-dom";
-import SignInModal from "../Modals/SignInModal";
+// import SignInModal from "../Modals/SignInModal";
 
 function Header(){
  
@@ -15,8 +15,12 @@ function Header(){
           </div>
           <div>
             {/* <button className="sign_in_btn">Sign in</button> */}
-              <SignInModal></SignInModal>
-            
+            {/* <SignInModal></SignInModal> */}
+            <button className="sign_in_btn">
+              <Link className="link" to="/signIn">
+                Sign In
+              </Link>
+            </button>
           </div>
         </header>
       </React.Fragment>
